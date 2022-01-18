@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- End Fonts -->
+    <title>Document</title>
+</head>
+<body id="myBodyEle">
+    
+    <header>Jovany's Library</header>
+    <hr>
+    <button id="myAddBook" onclick="openForm()"> + New Book</button>
+    <br>
+    <br>
+    <div id="bookHolder">
 
+    </div>
+
+    <div class="popup-form" id="myForm">
+        <form action="" class="form-container">
+            <h1>Add New Book</h1>
+            
+            <input type="text" placeholder="Enter Book Name" id="bookTitle" required>
+            <br>
+            <br>
+            <input type="text" placeholder="Enter Author Name" id="bookAuthor" required>
+            <br>
+            <br>
+            <input type="text" placeholder="Enter Number of Pages" id="numberOfPages" required>
+            <br>
+            <br>
+            <input type="checkbox" id="read">
+            <label for="read">Has this book been read?</label>
+            <br>
+            <br>
+            <button id="mySubmit" onclick="closeForm(event)">Submit</button>
+            <br>
+            
+        </form>
+        <br>
+            <button id='cancelButton' onclick="myCancel()">CANCEL </button> 
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
